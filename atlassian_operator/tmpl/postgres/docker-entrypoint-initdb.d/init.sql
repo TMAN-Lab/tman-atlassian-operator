@@ -1,0 +1,3 @@
+CREATE DATABASE jira;
+CREATE DATABASE confluence;
+CREATE DATABASE bitbucket;

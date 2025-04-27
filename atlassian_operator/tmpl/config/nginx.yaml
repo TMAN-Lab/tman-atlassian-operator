@@ -1,0 +1,11 @@
+service: nginx
+image: "nginx:1.26-alpine"
+
+cpus: "0.1"
+memory: "256M"
+port:
+    - 80
+    - 443
+
+environment:
+    ~

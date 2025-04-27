@@ -1,0 +1,20 @@
+service: bitbucket
+image: "atlassian/bitbucket:8.5"
+
+cpus: "1"
+memory: "4096M"
+port:
+    - 7990
+
+environment:
+#    JVM_SUPPORT_RECOMMENDED_ARGS: ""
+    JVM_MINIMUM_MEMORY: 2048m
+    JVM_MAXIMUM_MEMORY: 2048m
+#    SERVER_PROXY_NAME: bitbucket.example.com
+#    SERVER_PROXY_PORT: 443
+    SERVER_SCHEME: http
+    SERVER_SECURE: false
+#    JDBC_DRIVER: "org.postgresql.Driver"
+#    JDBC_URL: "jdbc:postgresql://atlassian-operator-postgres:5432/bitbucket"
+#    JDBC_USER: "postgres"
+#    JDBC_PASSWORD: "password"

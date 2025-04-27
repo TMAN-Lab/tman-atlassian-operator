@@ -1,0 +1,12 @@
+service: postgres
+image: "postgres:15"
+
+cpus: "0.5"
+memory: "2048M"
+port:
+    - 5432
+
+environment:
+    POSTGRES_USER: "postgres"
+    POSTGRES_PASSWORD: "password"
+    POSTGRES_DB: "postgres"

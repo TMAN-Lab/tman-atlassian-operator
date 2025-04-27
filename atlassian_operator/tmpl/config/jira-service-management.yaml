@@ -1,0 +1,25 @@
+service: jira-servicemanagement
+image: "atlassian/jira-servicemanagement:10.3.5"
+
+cpus: "2"
+memory: "8192M"
+port:
+    - 8080
+
+environment:
+    JVM_SUPPORT_RECOMMENDED_ARGS: "-Dupm.plugin.upload.enabled=true"
+    JVM_MINIMUM_MEMORY: 4096m
+    JVM_MAXIMUM_MEMORY: 4096m
+    JVM_RESERVED_CODE_CACHE_SIZE: 1024m
+#    ATL_PROXY_NAME: jira.example.com
+#    ATL_PROXY_PORT: 443
+    ATL_TOMCAT_PORT: 8080
+    ATL_TOMCAT_SCHEME: http
+    ATL_TOMCAT_SECURE: false
+#    ATL_JDBC_URL: "jdbc:postgresql://atlassian-operator-postgres:5432/jira"
+#    ATL_JDBC_USER: "postgres"
+#    ATL_JDBC_PASSWORD: "password"
+#    ATL_DB_DRIVER: "org.postgresql.Driver"
+#    ATL_DB_TYPE: "postgres72"
+    CLUSTERED: true
+    JIRA_NODE_ID: "jira_node_1"
