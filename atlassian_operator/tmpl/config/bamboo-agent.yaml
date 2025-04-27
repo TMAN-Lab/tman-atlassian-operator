@@ -1,0 +1,15 @@
+service: bamboo-agent
+image: "atlassian/bamboo-agent-base:10.2"
+
+cpus: "2"
+memory: "4096M"
+#port:
+#    - 54663
+
+environment:
+#    JVM_SUPPORT_RECOMMENDED_ARGS: ""
+#    BAMBOO_SERVER: "http://bamboo.example.com/agentServer/"
+    WRAPPER_JAVA_INITMEMORY: 2048
+    WRAPPER_JAVA_MAXMEMORY: 2048
+    IGNORE_SERVER_CERT_NAME: false
+    ALLOW_EMPTY_ARTIFACTS: false

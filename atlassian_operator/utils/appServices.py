@@ -82,10 +82,10 @@ class AppServices(object):
                     "{}/jira".format(self.app_path_container),
                     "/var/atlassian/application-data/jira"
                 )
-            elif config_content.get("service") in ["confluence"]:
+            elif config_content.get("service") in ["confluence", "bitbucket", "bamboo", "bamboo-agent", "crowd"]:
                 item.bind_volume(
-                    "{}/confluence".format(self.app_path_container),
-                    "/var/atlassian/application-data/confluence"
+                    "{}/{}".format(self.app_path_container, config_content.get("service")),
+                    "/var/atlassian/application-data/{}".format(config_content.get("service"))
                 )
             elif config_content.get("service") in ["postgres"]:
                 item.bind_volume(

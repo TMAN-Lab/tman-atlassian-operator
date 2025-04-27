@@ -24,6 +24,8 @@ def product_alias_full_name():
         "jsm": "jira-service-management",
         "conf": "confluence",
         "bitbucket": "bitbucket",
+        "bamboo": "bamboo",
+        "bamboo-agent": "bamboo-agent",
     }
 
 

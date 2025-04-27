@@ -6,7 +6,7 @@
 from setuptools import find_packages, setup
 import os
 
-URL = 'https://en.tman.ltd'
+URL = 'https://github.com/TMAN-Lab/tman-atlassian-operator'
 
 NAME = 'atlassian-operator'
 

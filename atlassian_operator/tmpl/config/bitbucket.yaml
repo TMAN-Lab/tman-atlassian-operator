@@ -1,5 +1,5 @@
 service: bitbucket
-image: "atlassian/bitbucket:8.5"
+image: "atlassian/bitbucket:9.4"
 
 cpus: "1"
 memory: "4096M"

@@ -1,5 +1,5 @@
 service: jira-servicemanagement
-image: "atlassian/jira-servicemanagement:10.3.5"
+image: "atlassian/jira-servicemanagement:10.3"
 
 cpus: "2"
 memory: "8192M"

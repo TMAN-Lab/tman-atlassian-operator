@@ -1,5 +1,5 @@
 service: jira-software
-image: "atlassian/jira-software:10.3.5"
+image: "atlassian/jira-software:10.3"
 
 cpus: "2"
 memory: "8192M"

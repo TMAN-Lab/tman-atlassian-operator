@@ -131,3 +131,7 @@ All configuration files can be found when you run `atlas-operator show --config`
 
 - [Jira Data Center Container](https://atlassian.github.io/data-center-helm-charts/containers/JIRA/)
 - [Confluence Data Center Container](https://atlassian.github.io/data-center-helm-charts/containers/CONFLUENCE/)
+- [Bitbucket Data Center Container](https://atlassian.github.io/data-center-helm-charts/containers/BITBUCKET/)
+- [Bamboo Container](https://atlassian.github.io/data-center-helm-charts/containers/BAMBOO/)
+- [Bamboo Agent Container](https://atlassian.github.io/data-center-helm-charts/containers/BAMBOO-AGENT/)
+- [Crowd Data Center Container](https://atlassian.github.io/data-center-helm-charts/containers/CROWD/)
