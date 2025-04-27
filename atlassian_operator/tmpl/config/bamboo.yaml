@@ -17,6 +17,7 @@ environment:
     ATL_TOMCAT_PROTOCOL: "HTTP/1.1"
     ATL_TOMCAT_SCHEME: http
     ATL_TOMCAT_SECURE: false
+    ATL_BROKER_URI: "nio://atlas-operator-bamboo:54663"
 #    ATL_JDBC_URL: "jdbc:postgresql://atlas-operator-postgres:5432/bamboo"
 #    ATL_JDBC_USER: "postgres"
 #    ATL_JDBC_PASSWORD: "password"
