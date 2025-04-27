@@ -15,6 +15,6 @@ environment:
     SERVER_SCHEME: http
     SERVER_SECURE: false
 #    JDBC_DRIVER: "org.postgresql.Driver"
-#    JDBC_URL: "jdbc:postgresql://atlassian-operator-postgres:5432/bitbucket"
+#    JDBC_URL: "jdbc:postgresql://atlas-operator-postgres:5432/bitbucket"
 #    JDBC_USER: "postgres"
 #    JDBC_PASSWORD: "password"

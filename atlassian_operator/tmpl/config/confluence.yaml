@@ -16,7 +16,7 @@ environment:
     ATL_TOMCAT_PORT: 8090
     ATL_TOMCAT_SCHEME: http
     ATL_TOMCAT_SECURE: false
-#    ATL_JDBC_URL: "jdbc:postgresql://atlassian-operator-postgres:5432/confluence"
+#    ATL_JDBC_URL: "jdbc:postgresql://atlas-operator-postgres:5432/confluence"
 #    ATL_JDBC_USER: "postgres"
 #    ATL_JDBC_PASSWORD: "password"
 #    ATL_DB_DRIVER: "org.postgresql.Driver"
