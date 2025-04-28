@@ -12,6 +12,12 @@
 
 > A Python-powered tool to simplify deployment and management of Atlassian products (Jira, Confluence, Bitbucket, Bamboo) using Docker containers.
 
+[![org](https://img.shields.io/static/v1?style=for-the-badge&label=org&message=TMAN%20Consulting&color=0061f9)](https://will.bowxeon.com)
+![license](https://img.shields.io/github/license/tman-lab/tman-atlassian-operator?style=for-the-badge)
+![author](https://img.shields.io/static/v1?style=for-the-badge&label=author&message=will.shi@tman.ltd&color=blue)
+[![python](https://img.shields.io/static/v1?style=for-the-badge&logo=python&label=Python&message=3.x&color=306ba1)](https://devguide.python.org/versions/)
+[![pypi](https://img.shields.io/pypi/v/atlassian-operator.svg?style=for-the-badge)](https://pypi.org/project/atlassian-operator)
+
 ----
 
 ## 🚀 Key Features
@@ -28,9 +34,9 @@
 
 ### 1️⃣ Check preconditions
 
-- Python >= 3
-- pip
-- Docker >= 20
+- [Python](https://www.python.org/downloads/) >= 3
+- [pip](https://pip.pypa.io/en/stable/installation/)
+- [Docker](https://docs.docker.com/get-started/get-docker/) >= 20
 
 ### 2️⃣ Install `atlassian-operator` tool
 
@@ -115,7 +121,7 @@ All configuration files can be found when you run `atlas-operator show --config`
 
 ## 🌍 License
 
-`Apache License 2.0`
+[Apache License 2.0](https://github.com/TMAN-Lab/tman-atlassian-operator?tab=Apache-2.0-1-ov-file)
 
 ----
 
