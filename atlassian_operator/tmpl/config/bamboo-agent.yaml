@@ -6,6 +6,10 @@ memory: "4096M"
 #port:
 #    - 54663
 
+#volume:
+#    - "/usr/bin/docker:/usr/bin/docker"
+#    - "/var/run/docker.sock:/var/run/docker.sock"
+
 environment:
 #    JVM_SUPPORT_RECOMMENDED_ARGS: ""
     BAMBOO_SERVER: "http://atlas-operator-bamboo:8085/agentServer/"
