@@ -7,8 +7,12 @@ port:
     - 8085
     - 54663
 
+#volume:
+#    - "/usr/bin/docker:/usr/bin/docker"
+#    - "/var/run/docker.sock:/var/run/docker.sock"
+
 environment:
-#    JVM_SUPPORT_RECOMMENDED_ARGS: ""
+    JVM_SUPPORT_RECOMMENDED_ARGS: "-Dupm.plugin.upload.enabled=true"
     JVM_MINIMUM_MEMORY: 2048m
     JVM_MAXIMUM_MEMORY: 2048m
 #    ATL_PROXY_NAME: bamboo.example.com

@@ -4,6 +4,7 @@
 
 
 # import os
+import sys
 import docker
 from docker.errors import NotFound
 from docker.errors import ImageNotFound
@@ -13,12 +14,33 @@ from tabulate import tabulate
 from atlassian_operator.utils.appLogger import AppLogger
 
 
+def show_docker_install_doc_link():
+    doc_link = ""
+    if sys.platform.startswith("linux"):
+        doc_link = "https://docs.docker.com/desktop/setup/install/linux/"
+    elif sys.platform.startswith("win32"):
+        doc_link = "https://docs.docker.com/desktop/setup/install/windows-install/"
+    elif sys.platform.startswith("darwin"):
+        doc_link = "https://docs.docker.com/desktop/setup/install/mac-install/"
+    return doc_link
+
+
 class AppDocker(object):
     def __init__(self, app_name, app_args):
         try:
             self.docker = docker.from_env()
         except DockerException as DockerError:
-            AppLogger.failure("{}\nIs the docker daemon running?".format(DockerError))
+            # AppLogger.failure("{}\nIs the docker daemon running?".format(DockerError))
+            append_msg = ""
+            if "ConnectionRefusedError" in "{}".format(DockerError):
+                append_msg = "Is the docker daemon running?"
+            elif "FileNotFoundError" in "{}".format(DockerError):
+                docker_doc_link = show_docker_install_doc_link()
+                append_msg = " ".join([
+                    "Is the docker installed?",
+                    "Please find more from the link {}".format(docker_doc_link) if docker_doc_link else ""
+                ])
+            AppLogger.failure("{}\n{}".format(DockerError, append_msg))
             AppLogger.exit()
         self.app_name = app_name
         try:
