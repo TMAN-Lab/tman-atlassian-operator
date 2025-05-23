@@ -1,6 +1,6 @@
 # Atlassian Operator
 
-*Powered by [TMAN Consulting](https://en.tman.ltd)*
+*Brought to you by [TMAN Consulting](https://en.tman.ltd)*
 
 ```text
    ___ ________   ___   _______________   _  __  ____                    __          
