@@ -12,7 +12,7 @@
 
 > A Python-powered tool to simplify deployment and management of Atlassian products (Jira, Confluence, Bitbucket, Bamboo) using Docker containers.
 
-[![org](https://img.shields.io/static/v1?style=for-the-badge&label=org&message=TMAN%20Consulting&color=0061f9)](https://will.bowxeon.com)
+[![org](https://img.shields.io/static/v1?style=for-the-badge&label=org&message=TMAN%20Consulting&color=0061f9)](https://blog.willshi.space)
 ![license](https://img.shields.io/github/license/tman-lab/tman-atlassian-operator?style=for-the-badge)
 ![author](https://img.shields.io/static/v1?style=for-the-badge&label=author&message=will.shi@tman.ltd&color=blue)
 [![python](https://img.shields.io/static/v1?style=for-the-badge&logo=python&label=Python&message=3.x&color=306ba1)](https://devguide.python.org/versions/)
