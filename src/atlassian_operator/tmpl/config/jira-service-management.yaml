@@ -13,7 +13,7 @@ environment:
 #    JAVA_OPTS: ""
     JVM_SUPPORT_RECOMMENDED_ARGS: "-Dupm.plugin.upload.enabled=true"
     JVM_MINIMUM_MEMORY: 4096m
-    JVM_MAXIMUM_MEMORY: 4096m
+    JVM_MAXIMUM_MEMORY: 7680m
     JVM_RESERVED_CODE_CACHE_SIZE: 1024m
 #    ATL_PROXY_NAME: jira.example.com
 #    ATL_PROXY_PORT: 443

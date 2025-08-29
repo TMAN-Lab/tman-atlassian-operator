@@ -13,7 +13,7 @@ environment:
 #    JAVA_OPTS: ""
     JVM_SUPPORT_RECOMMENDED_ARGS: "-Dsun.jnu.encoding=UTF-8 -Dfile.encoding=UTF-8"
     JVM_MINIMUM_MEMORY: 4096m
-    JVM_MAXIMUM_MEMORY: 4096m
+    JVM_MAXIMUM_MEMORY: 7680m
     JVM_RESERVED_CODE_CACHE_SIZE: 1024m
 #    ATL_PROXY_NAME: confluence.example.com
 #    ATL_PROXY_PORT: 443
