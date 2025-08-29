@@ -31,7 +31,7 @@ pipelines:
           script:
             - export APP_VERSION=${BITBUCKET_TAG}
             - echo "$APP_VERSION"
-            - sed -i "s/version = .*/version = $APP_VERSION/" pyproject.toml
+            - sed -i "s/version = .*/version = \"$APP_VERSION\"/" pyproject.toml
             - python -m pip install --upgrade pip
             - pip install build setuptools wheel twine 
             - python -m build
