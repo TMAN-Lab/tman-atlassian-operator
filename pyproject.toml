@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atlassian-operator"
+version = "0.5"
+description = "Deploying Atlassian Products with Docker"
+readme = "README.md"
+requires-python = ">=3.7"
+license-files = ["LICEN[CS]E*"]
+authors = [
+    { name = "Will", email = "will.shi@tman.ltd" }
+]
+maintainers = [
+    { name = "Will", email = "will.shi@tman.ltd" }
+]
+dependencies = [
+    "PyYAML",
+    "tabulate",
+    "requests",
+    "argcomplete",
+    "docker",
+]
+keywords = ["atlassian", "jira", "confluence", "docker", "deploy", "setup", "cli"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux"
+]
+
+[project.urls]
+Homepage = "https://github.com/TMAN-Lab/tman-atlassian-operator"
+
+[project.scripts]
+atlas-operator = "atlassian_operator.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+package-data = { "atlassian_operator" = ["tmpl/config/*yaml", "tmpl/nginx/conf.d/*conf", "tmpl/postgres/docker-entrypoint-initdb.d/*sql"] }
+

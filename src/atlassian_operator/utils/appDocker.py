@@ -115,6 +115,7 @@ class AppDocker(object):
             assert not self.__check_container(service_object.container_name)
             if not upgrade:
                 service_object.labels["app"] = self.app_name
+                service_object.labels["com.docker.compose.project"] = self.app_name
             self.docker.containers.run(
                 image=service_object.image,
                 name=service_object.container_name,
@@ -194,6 +195,7 @@ class AppDocker(object):
                     if env_k.startswith("{}_".format(self.app_name.upper())):
                         service_object.environment[env_k] = env_v
                 service_object.labels["app"] = item.attrs["Config"]["Labels"].get("app")
+                service_object.labels["com.docker.compose.project"] = item.attrs["Config"]["Labels"].get("com.docker.compose.project")
                 service_object.labels["mirror"] = item.attrs["Config"]["Labels"].get("mirror")
                 AppLogger.tab_warning("Labels: {}".format(service_object.labels))
                 self.cli_down(service_object)

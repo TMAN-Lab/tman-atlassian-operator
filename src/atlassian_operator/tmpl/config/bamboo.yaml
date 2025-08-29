@@ -12,6 +12,7 @@ port:
 #    - "/var/run/docker.sock:/var/run/docker.sock"
 
 environment:
+#    JAVA_OPTS: ""
     JVM_SUPPORT_RECOMMENDED_ARGS: "-Dupm.plugin.upload.enabled=true"
     JVM_MINIMUM_MEMORY: 2048m
     JVM_MAXIMUM_MEMORY: 2048m

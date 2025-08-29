@@ -4,6 +4,7 @@
 
 
 import os
+from time import sleep
 import shutil
 import sys
 import pkg_resources
@@ -359,7 +360,10 @@ class AppApi(object):
             AppLogger.failure("Looks like no init history in this host, hava you executed 'init'?")
             return False
         for item in self.app_services.items:
+            print("\tservice {}".format(item.service_name))
             self.docker.cli_up(service_object=item)
+            sleep(10)
+        print("")
         self.docker.cli_ps()
         AppLogger.success("All services started")
         return True
@@ -393,7 +397,9 @@ class AppApi(object):
             self.__list_dir()
             AppLogger.failure("Looks like no init history in this host, hava you executed 'init'?")
             return False
-        for item in self.app_services.items:
+        services_items = self.app_services.items
+        services_items.reverse()
+        for item in services_items:
             print("\tservice {}".format(item.service_name))
             self.docker.cli_down(service_object=item)
         print("")
